@@ -1,0 +1,1471 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/nygardk/react-share#readme">react-share (v1.13.2)</a>
+</h1>
+<h4>Easy social media share buttons and share counts.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share">module react-share</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.generateShareIcon">
+            function <span class="apidocSignatureSpan">react-share.</span>generateShareIcon
+            <span class="apidocSignatureSpan">(network)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-share.</span>ShareButtons</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-share.</span>ShareCounts</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-share.</span>generateIcon</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-share.</span>share_count_getters</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-share.</span>social_media_share_links</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-share.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share.ShareButtons">module react-share.ShareButtons</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.FacebookShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>FacebookShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.GooglePlusShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>GooglePlusShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.LinkedinShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>LinkedinShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.OKShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>OKShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.PinterestShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>PinterestShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.TelegramShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>TelegramShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.TwitterShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>TwitterShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.VKShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>VKShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.WhatsappShareButton">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>WhatsappShareButton
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareButtons.default">
+            function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>default
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share.ShareCounts">module react-share.ShareCounts</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.FacebookShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>FacebookShareCount
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.GooglePlusShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>GooglePlusShareCount
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.LinkedinShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>LinkedinShareCount
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.OKShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>OKShareCount
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.PinterestShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>PinterestShareCount
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.TwitterShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>TwitterShareCount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.ShareCounts.VKShareCount">
+            function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>VKShareCount
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share.generateIcon">module react-share.generateIcon</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.generateIcon.generateIcon">
+            function <span class="apidocSignatureSpan">react-share.</span>generateIcon
+            <span class="apidocSignatureSpan">(network)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share.share_count_getters">module react-share.share_count_getters</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.share_count_getters.getFacebookShareCount">
+            function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getFacebookShareCount
+            <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.share_count_getters.getGooglePlusShareCount">
+            function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getGooglePlusShareCount
+            <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.share_count_getters.getLinkedinShareCount">
+            function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getLinkedinShareCount
+            <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.share_count_getters.getOKShareCount">
+            function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getOKShareCount
+            <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.share_count_getters.getPinterestShareCount">
+            function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getPinterestShareCount
+            <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.share_count_getters.getVKShareCount">
+            function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getVKShareCount
+            <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share.social_media_share_links">module react-share.social_media_share_links</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.email">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>email
+            <span class="apidocSignatureSpan">(subject, body)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.facebook">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>facebook
+            <span class="apidocSignatureSpan">(url, _ref4)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.googlePlus">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>googlePlus
+            <span class="apidocSignatureSpan">(url)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.linkedin">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>linkedin
+            <span class="apidocSignatureSpan">(url, _ref5)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.ok">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>ok
+            <span class="apidocSignatureSpan">(url, _ref8)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.pinterest">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>pinterest
+            <span class="apidocSignatureSpan">(url, _ref6)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.telegram">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>telegram
+            <span class="apidocSignatureSpan">(url, _ref2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.twitter">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>twitter
+            <span class="apidocSignatureSpan">(url, _ref)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.vk">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>vk
+            <span class="apidocSignatureSpan">(url, _ref7)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.social_media_share_links.whatsapp">
+            function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>whatsapp
+            <span class="apidocSignatureSpan">(url, _ref3)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-share.utils">module react-share.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.utils.objectToGetParams">
+            function <span class="apidocSignatureSpan">react-share.utils.</span>objectToGetParams
+            <span class="apidocSignatureSpan">(object)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-share.utils.windowOpen">
+            function <span class="apidocSignatureSpan">react-share.utils.</span>windowOpen
+            <span class="apidocSignatureSpan">(url, _ref)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share" id="apidoc.module.react-share">module react-share</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.generateShareIcon" id="apidoc.element.react-share.generateShareIcon">
+        function <span class="apidocSignatureSpan">react-share.</span>generateShareIcon
+        <span class="apidocSignatureSpan">(network)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateIcon(network) {
+  if (!_icons2.default[network.toLowerCase()]) {
+    throw new Error('invalid network name for a social icon');
+  }
+
+  var iconConfig = _icons2.default[network.toLowerCase()];
+
+  var Icon = function Icon(props) {
+    var className = props.className,
+        iconBgStyle = props.iconBgStyle,
+        logoFillColor = props.logoFillColor,
+        round = props.round,
+        size = props.size;
+
+
+    var baseStyle = {
+      width: size,
+      height: size
+    };
+
+    var classes = 'social-icon social-icon--' + network + ' ' + (className || '');
+
+    var finalIconBgStyle = (0, _extends3.default)({}, iconBgStyle);
+
+    return _react2.default.createElement(
+      'div',
+      { style: baseStyle },
+      _react2.default.createElement(
+        'svg',
+        {
+          viewBox: '0 0 64 64',
+          fill: logoFillColor,
+          width: size,
+          height: size,
+          className: classes },
+        _react2.default.createElement(
+          'g',
+          null,
+          !round ? _react2.default.createElement('rect', {
+            width: '64',
+            height: '64',
+            fill: iconConfig.color,
+            style: finalIconBgStyle }) : _react2.default.createElement('circle', {
+            cx: '32',
+            cy: '32',
+            r: '31',
+            fill: iconConfig.color,
+            style: finalIconBgStyle })
+        ),
+        _react2.default.createElement(
+          'g',
+          null,
+          _react2.default.createElement('path', { d: iconConfig.icon })
+        )
+      )
+    );
+  };
+
+  Icon.propTypes = {
+    className: _propTypes2.default.string,
+    iconBgStyle: _propTypes2.default.object,
+    logoFillColor: _propTypes2.default.string,
+    round: _propTypes2.default.bool,
+    size: _propTypes2.default.number
+  };
+
+  Icon.defaultProps = {
+    logoFillColor: 'white',
+    size: 64
+  };
+
+  return Icon;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share.ShareButtons" id="apidoc.module.react-share.ShareButtons">module react-share.ShareButtons</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.FacebookShareButton" id="apidoc.element.react-share.ShareButtons.FacebookShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>FacebookShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.GooglePlusShareButton" id="apidoc.element.react-share.ShareButtons.GooglePlusShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>GooglePlusShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.LinkedinShareButton" id="apidoc.element.react-share.ShareButtons.LinkedinShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>LinkedinShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.OKShareButton" id="apidoc.element.react-share.ShareButtons.OKShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>OKShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.PinterestShareButton" id="apidoc.element.react-share.ShareButtons.PinterestShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>PinterestShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.TelegramShareButton" id="apidoc.element.react-share.ShareButtons.TelegramShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>TelegramShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.TwitterShareButton" id="apidoc.element.react-share.ShareButtons.TwitterShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>TwitterShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.VKShareButton" id="apidoc.element.react-share.ShareButtons.VKShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>VKShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.WhatsappShareButton" id="apidoc.element.react-share.ShareButtons.WhatsappShareButton">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>WhatsappShareButton
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CreatedButton(props) {
+  return _react2.default.createElement(ShareButton, (0, _extends3.default)({}, props, {
+    network: network,
+    opts: optsMap(props) }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareButtons.default" id="apidoc.element.react-share.ShareButtons.default">
+        function <span class="apidocSignatureSpan">react-share.ShareButtons.</span>default
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ShareButton() {
+  var _ref;
+
+  var _temp, _this, _ret;
+
+  (0, _classCallCheck3.default)(this, ShareButton);
+
+  for (var _len = arguments.length, args = Array(_len), _key = 0; _key &lt; _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = ShareButton.__proto__ || (0, _getPrototypeOf2
+.default)(ShareButton)).call.apply(_ref, [this].concat(args))), _this), _this.onClick = function (e) {
+    var _this$props = _this.props,
+        disabled = _this$props.disabled,
+        windowWidth = _this$props.windowWidth,
+        windowHeight = _this$props.windowHeight,
+        beforeOnClick = _this$props.beforeOnClick;
+
+
+    if (!disabled) {
+      e.preventDefault();
+
+      var windowOptions = {
+        height: windowHeight,
+        width: windowWidth
+      };
+
+      var windowOpenBound = function windowOpenBound() {
+        return (0, _utils.windowOpen)(_this.link(), windowOptions);
+      };
+
+      if (beforeOnClick) {
+        beforeOnClick().then(function () {
+          return windowOpenBound();
+        });
+      } else {
+        windowOpenBound();
+      }
+    }
+  }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share.ShareCounts" id="apidoc.module.react-share.ShareCounts">module react-share.ShareCounts</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.FacebookShareCount" id="apidoc.element.react-share.ShareCounts.FacebookShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>FacebookShareCount
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">FacebookShareCount = function (props) {
+  return _react2.default.createElement(SocialMediaShareCount, (0, _extends3.default)({ getCount: getCount }, props));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.GooglePlusShareCount" id="apidoc.element.react-share.ShareCounts.GooglePlusShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>GooglePlusShareCount
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">GooglePlusShareCount = function (props) {
+  return _react2.default.createElement(SocialMediaShareCount, (0, _extends3.default)({ getCount: getCount }, props));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.LinkedinShareCount" id="apidoc.element.react-share.ShareCounts.LinkedinShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>LinkedinShareCount
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">LinkedinShareCount = function (props) {
+  return _react2.default.createElement(SocialMediaShareCount, (0, _extends3.default)({ getCount: getCount }, props));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.OKShareCount" id="apidoc.element.react-share.ShareCounts.OKShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>OKShareCount
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OKShareCount = function (props) {
+  return _react2.default.createElement(SocialMediaShareCount, (0, _extends3.default)({ getCount: getCount }, props));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.PinterestShareCount" id="apidoc.element.react-share.ShareCounts.PinterestShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>PinterestShareCount
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">PinterestShareCount = function (props) {
+  return _react2.default.createElement(SocialMediaShareCount, (0, _extends3.default)({ getCount: getCount }, props));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.TwitterShareCount" id="apidoc.element.react-share.ShareCounts.TwitterShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>TwitterShareCount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function TwitterShareCount() {
+  throw new Error('TwitterShareCount was removed in version 1.3.0 because' + 'the Twitter API was shut down and there is no replacement
+. Please ' + 'remove it from your code.');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.ShareCounts.VKShareCount" id="apidoc.element.react-share.ShareCounts.VKShareCount">
+        function <span class="apidocSignatureSpan">react-share.ShareCounts.</span>VKShareCount
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">VKShareCount = function (props) {
+  return _react2.default.createElement(SocialMediaShareCount, (0, _extends3.default)({ getCount: getCount }, props));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share.generateIcon" id="apidoc.module.react-share.generateIcon">module react-share.generateIcon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.generateIcon.generateIcon" id="apidoc.element.react-share.generateIcon.generateIcon">
+        function <span class="apidocSignatureSpan">react-share.</span>generateIcon
+        <span class="apidocSignatureSpan">(network)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function generateIcon(network) {
+  if (!_icons2.default[network.toLowerCase()]) {
+    throw new Error('invalid network name for a social icon');
+  }
+
+  var iconConfig = _icons2.default[network.toLowerCase()];
+
+  var Icon = function Icon(props) {
+    var className = props.className,
+        iconBgStyle = props.iconBgStyle,
+        logoFillColor = props.logoFillColor,
+        round = props.round,
+        size = props.size;
+
+
+    var baseStyle = {
+      width: size,
+      height: size
+    };
+
+    var classes = 'social-icon social-icon--' + network + ' ' + (className || '');
+
+    var finalIconBgStyle = (0, _extends3.default)({}, iconBgStyle);
+
+    return _react2.default.createElement(
+      'div',
+      { style: baseStyle },
+      _react2.default.createElement(
+        'svg',
+        {
+          viewBox: '0 0 64 64',
+          fill: logoFillColor,
+          width: size,
+          height: size,
+          className: classes },
+        _react2.default.createElement(
+          'g',
+          null,
+          !round ? _react2.default.createElement('rect', {
+            width: '64',
+            height: '64',
+            fill: iconConfig.color,
+            style: finalIconBgStyle }) : _react2.default.createElement('circle', {
+            cx: '32',
+            cy: '32',
+            r: '31',
+            fill: iconConfig.color,
+            style: finalIconBgStyle })
+        ),
+        _react2.default.createElement(
+          'g',
+          null,
+          _react2.default.createElement('path', { d: iconConfig.icon })
+        )
+      )
+    );
+  };
+
+  Icon.propTypes = {
+    className: _propTypes2.default.string,
+    iconBgStyle: _propTypes2.default.object,
+    logoFillColor: _propTypes2.default.string,
+    round: _propTypes2.default.bool,
+    size: _propTypes2.default.number
+  };
+
+  Icon.defaultProps = {
+    logoFillColor: 'white',
+    size: 64
+  };
+
+  return Icon;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share.share_count_getters" id="apidoc.module.react-share.share_count_getters">module react-share.share_count_getters</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.share_count_getters.getFacebookShareCount" id="apidoc.element.react-share.share_count_getters.getFacebookShareCount">
+        function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getFacebookShareCount
+        <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getFacebookShareCount(shareUrl, callback) {
+  var endpoint = 'https://graph.facebook.com/?id=' + shareUrl;
+
+  (0, _jsonp2.default)(endpoint, function (err, data) {
+    callback(!err &amp;&amp; data &amp;&amp; data.share &amp;&amp; data.share.share_count ? data.share.share_count : undefined);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.share_count_getters.getGooglePlusShareCount" id="apidoc.element.react-share.share_count_getters.getGooglePlusShareCount">
+        function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getGooglePlusShareCount
+        <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getGooglePlusShareCount(shareUrl, callback) {
+  if (_platform2.default.name === 'IE' &amp;&amp; parseInt(_platform2.default.version, 10) &lt; 11) {
+<span class="apidocCodeCommentSpan">    /* eslint-disable no-console */
+</span>    console.error('Google plus share count is not supported in &lt;=IE10!');
+    /* eslint-enable no-console */
+    return;
+  }
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.open('POST', 'https://clients6.google.com/rpc');
+  xhr.setRequestHeader('Accept', 'application/json');
+  xhr.setRequestHeader('Content-type', 'application/json;charset=UTF-8');
+
+  xhr.send((0, _stringify2.default)({
+    method: 'pos.plusones.get',
+    id: 'p',
+    params: {
+      nolog: true,
+      id: shareUrl,
+      source: 'widget',
+      userId: '@viewer',
+      groupId: '@self'
+    },
+    jsonrpc: '2.0',
+    key: 'p',
+    apiVersion: 'v1'
+  }));
+
+  xhr.onload = function onSuccessdata() {
+    var data = JSON.parse(this.responseText);
+    callback(!!data ? data.result.metadata.globalCounts.count : undefined);
+  };
+
+  xhr.onerror = function onErrordata() {};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.share_count_getters.getLinkedinShareCount" id="apidoc.element.react-share.share_count_getters.getLinkedinShareCount">
+        function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getLinkedinShareCount
+        <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getLinkedinShareCount(shareUrl, callback) {
+  var url = 'https://www.linkedin.com/countserv/count/share';
+
+  return (0, _jsonp2.default)(url + (0, _utils.objectToGetParams)({
+    url: shareUrl,
+    format: 'jsonp'
+  }), function (err, data) {
+    callback(!!data ? data.count : undefined);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.share_count_getters.getOKShareCount" id="apidoc.element.react-share.share_count_getters.getOKShareCount">
+        function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getOKShareCount
+        <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getOKShareCount(shareUrl, callback) {
+  if (!window.OK) {
+    window.OK = {
+      Share: {
+        count: function count(index, _count) {
+          return window.OK.callbacks[index](_count);
+        }
+      },
+      callbacks: []
+    };
+  }
+
+  var url = 'https://connect.ok.ru/dk';
+  var index = window.OK.callbacks.length;
+
+  window.ODKL = {
+    updateCount: function updateCount(a, b) {
+      window.OK.callbacks[index](b);
+    }
+  };
+  window.OK.callbacks.push(callback);
+
+  return (0, _jsonp2.default)(url + (0, _utils.objectToGetParams)({
+    'st.cmd': 'extLike',
+    uid: 'odklcnt0',
+    ref: shareUrl
+  }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.share_count_getters.getPinterestShareCount" id="apidoc.element.react-share.share_count_getters.getPinterestShareCount">
+        function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getPinterestShareCount
+        <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getPinterestShareCount(shareUrl, callback) {
+  var url = 'https://api.pinterest.com/v1/urls/count.json';
+
+  return (0, _jsonp2.default)(url + (0, _utils.objectToGetParams)({
+    url: shareUrl
+  }), function (err, data) {
+    callback(!!data ? data.count : undefined);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.share_count_getters.getVKShareCount" id="apidoc.element.react-share.share_count_getters.getVKShareCount">
+        function <span class="apidocSignatureSpan">react-share.share_count_getters.</span>getVKShareCount
+        <span class="apidocSignatureSpan">(shareUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getVKShareCount(shareUrl, callback) {
+  if (!window.VK) {
+    window.VK = {
+      Share: {
+        count: function count(index, _count2) {
+          return window.VK.callbacks[index](_count2);
+        }
+      },
+      callbacks: []
+    };
+  }
+
+  var url = 'https://vk.com/share.php';
+  var index = window.VK.callbacks.length;
+
+  window.VK.callbacks.push(callback);
+
+  return (0, _jsonp2.default)(url + (0, _utils.objectToGetParams)({
+    act: 'count',
+    index: index,
+    url: shareUrl
+  }));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share.social_media_share_links" id="apidoc.module.react-share.social_media_share_links">module react-share.social_media_share_links</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.email" id="apidoc.element.react-share.social_media_share_links.email">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>email
+        <span class="apidocSignatureSpan">(subject, body)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function email(subject, body) {
+  (0, _assert2.default)(subject, 'email.subject');
+  (0, _assert2.default)(body, 'email.body');
+
+  return 'mailto:' + (0, _utils.objectToGetParams)({ subject: subject, body: body });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.facebook" id="apidoc.element.react-share.social_media_share_links.facebook">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>facebook
+        <span class="apidocSignatureSpan">(url, _ref4)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function facebook(url, _ref4) {
+  var title = _ref4.title,
+      description = _ref4.description,
+      picture = _ref4.picture,
+      hashtag = _ref4.hashtag;
+
+  (0, _assert2.default)(url, 'facebook.url');
+
+  return 'https://www.facebook.com/sharer/sharer.php' + (0, _utils.objectToGetParams)({
+    u: url,
+    title: title,
+    description: description,
+    picture: picture,
+    hashtag: hashtag
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.googlePlus" id="apidoc.element.react-share.social_media_share_links.googlePlus">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>googlePlus
+        <span class="apidocSignatureSpan">(url)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function googlePlus(url) {
+  (0, _assert2.default)(url, 'googlePlus.url');
+
+  return 'https://plus.google.com/share' + (0, _utils.objectToGetParams)({ url: url });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.linkedin" id="apidoc.element.react-share.social_media_share_links.linkedin">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>linkedin
+        <span class="apidocSignatureSpan">(url, _ref5)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function linkedin(url, _ref5) {
+  var title = _ref5.title,
+      description = _ref5.description;
+
+  (0, _assert2.default)(url, 'linkedin.url');
+
+  return 'https://linkedin.com/shareArticle' + (0, _utils.objectToGetParams)({
+    url: url,
+    title: title,
+    summary: description
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.ok" id="apidoc.element.react-share.social_media_share_links.ok">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>ok
+        <span class="apidocSignatureSpan">(url, _ref8)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ok(url, _ref8) {
+  var title = _ref8.title,
+      description = _ref8.description,
+      image = _ref8.image;
+
+  (0, _assert2.default)(url, 'ok.url');
+
+  return 'https://connect.ok.ru/offer' + (0, _utils.objectToGetParams)({
+    url: url,
+    title: title,
+    description: description,
+    imageUrl: image
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.pinterest" id="apidoc.element.react-share.social_media_share_links.pinterest">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>pinterest
+        <span class="apidocSignatureSpan">(url, _ref6)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function pinterest(url, _ref6) {
+  var media = _ref6.media,
+      description = _ref6.description;
+
+  (0, _assert2.default)(url, 'pinterest.url');
+  (0, _assert2.default)(media, 'pinterest.media');
+
+  return 'https://pinterest.com/pin/create/button/' + (0, _utils.objectToGetParams)({
+    url: url,
+    media: media,
+    description: description
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.telegram" id="apidoc.element.react-share.social_media_share_links.telegram">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>telegram
+        <span class="apidocSignatureSpan">(url, _ref2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function telegram(url, _ref2) {
+  var title = _ref2.title;
+
+  (0, _assert2.default)(url, 'telegram.url');
+  return 'https://telegram.me/share/' + (0, _utils.objectToGetParams)({
+    url: url,
+    text: title
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.twitter" id="apidoc.element.react-share.social_media_share_links.twitter">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>twitter
+        <span class="apidocSignatureSpan">(url, _ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function twitter(url, _ref) {
+  var title = _ref.title,
+      via = _ref.via,
+      _ref$hashtags = _ref.hashtags,
+      hashtags = _ref$hashtags === undefined ? [] : _ref$hashtags;
+
+  (0, _assert2.default)(url, 'twitter.url');
+  (0, _assert2.default)(Array.isArray(hashtags), 'twitter.hashtags is not an array');
+
+  return 'https://twitter.com/share' + (0, _utils.objectToGetParams)({
+    url: url,
+    text: title,
+    via: via,
+    hashtags: hashtags.join(',')
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.vk" id="apidoc.element.react-share.social_media_share_links.vk">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>vk
+        <span class="apidocSignatureSpan">(url, _ref7)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function vk(url, _ref7) {
+  var title = _ref7.title,
+      description = _ref7.description,
+      image = _ref7.image;
+
+  (0, _assert2.default)(url, 'vk.url');
+
+  return 'https://vk.com/share.php' + (0, _utils.objectToGetParams)({
+    url: url,
+    title: title,
+    description: description,
+    image: image
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.social_media_share_links.whatsapp" id="apidoc.element.react-share.social_media_share_links.whatsapp">
+        function <span class="apidocSignatureSpan">react-share.social_media_share_links.</span>whatsapp
+        <span class="apidocSignatureSpan">(url, _ref3)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function whatsapp(url, _ref3) {
+  var title = _ref3.title,
+      separator = _ref3.separator;
+
+  (0, _assert2.default)(url, 'whatsapp.url');
+  return 'whatsapp://send' + (0, _utils.objectToGetParams)({
+    text: title + separator + url
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-share.utils" id="apidoc.module.react-share.utils">module react-share.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.utils.objectToGetParams" id="apidoc.element.react-share.utils.objectToGetParams">
+        function <span class="apidocSignatureSpan">react-share.utils.</span>objectToGetParams
+        <span class="apidocSignatureSpan">(object)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function objectToGetParams(object) {
+  return '?' + (0, _keys2.default)(object).filter(function (key) {
+    return !!object[key];
+  }).map(function (key) {
+    return key + '=' + encodeURIComponent(object[key]);
+  }).join('&amp;');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-share.utils.windowOpen" id="apidoc.element.react-share.utils.windowOpen">
+        function <span class="apidocSignatureSpan">react-share.utils.</span>windowOpen
+        <span class="apidocSignatureSpan">(url, _ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function windowOpen(url, _ref) {
+  var name = _ref.name,
+      _ref$height = _ref.height,
+      height = _ref$height === undefined ? 400 : _ref$height,
+      _ref$width = _ref.width,
+      width = _ref$width === undefined ? 550 : _ref$width;
+
+  var left = window.outerWidth / 2 + (window.screenX || window.screenLeft || 0) - width / 2;
+  var top = window.outerHeight / 2 + (window.screenY || window.screenTop || 0) - height / 2;
+
+  var config = {
+    height: height,
+    width: width,
+    left: left,
+    top: top,
+    location: 'no',
+    toolbar: 'no',
+    status: 'no',
+    directories: 'no',
+    menubar: 'no',
+    scrollbars: 'yes',
+    resizable: 'no',
+    centerscreen: 'yes',
+    chrome: 'yes'
+  };
+
+  return window.open(url, _platform2.default.name === 'IE' &amp;&amp; parseInt(_platform2.default.version, 10) &lt; 10 ? '' : name, (0, _keys2
+.default)(config).map(function (key) {
+    return key + '=' + config[key];
+  }).join(', '));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
